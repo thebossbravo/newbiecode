@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bravo">
+    <meta name="description" content="This is a sample HTML page with custom styles. It contains all the things I am learning.">
+    <title>Sample HTML Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+<header>
+    <h1>Welcome to My Sample HTML Page</h1>
+
+    <hr>
+    
+    <nav aria-labelledby="primary-navigation">
+        <h2 id="primary-navigation">Primary Navigation</h2>
+        <ul>
+            <li><a href="index01.html">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="#html">Learning HTML</a></li>
+            <li><a href="#Vacation">Vacation Plans</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <hr>
+
+    <h2>I am ready to learn HTML </h2>
+    <p>This is my first web page.</p>
+    <figure>
+        <figcaption><em>HTML5 Logo</em></figcaption>
+        <img src="images/HTML5_logo.png" alt="HTML5 Logo" width="300" height="300" title="I am learning HTML5"></figure>
+        
+    <figure>
+        <figcaption> An Example of HTML Code </figcaption>
+        <p>
+            <code>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html lang="en"&gt; <br>
+                &lt;head&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;title&gt;Sample HTML Page&lt;/title&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to My Sample HTML Page&lt;/h1&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt;
+            </code>
+        </p> 
+    </figure>
+
+
+<main>
+    <section id="html">
+        <h3>My daily schedule for learning HTML. </h3>
+            <ol>
+                <li>Wake up early</li>
+                <li>Have breakfast</li>
+                <li>Study HTML and CSS</li>
+                <li>Practice coding</li>
+                <li>Work on projects</li>
+                <li>Relax and unwind</li>   
+            </ol>
+    </section>
+    <p>This is a paragraph on the page.Let me tell you how
+        <br>&nbsp;&nbsp;&nbsp;...I learned more about web development.
+        <br>&nbsp;&nbsp;&nbsp;...I planned out my projects and schedule
+        <br>&nbsp;&nbsp;&nbsp;...I practiced coding every day and used resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a></abbr> Web Docs.
+    </p>
+
+    <hr>
+    <section id="Vacation">
+
+    <h2>I Am Also Planning a Vacation. </h2>
+    <figure>
+        <img src="images/vacation.png" alt="Vacation Image" width="600" height="400" title="Vacation Image" loading="lazy">
+        <figcaption> <em>Beautiful vacation picture of two people relaxing </em></figcaption>
+    </figure>
+
+    <p>I have been working extremely hard and really need a break.</p>
+    <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+    <h3>Places I would like to visit. </h3>
+    <ul>
+        <li><p>Alaska</p></li>
+        <li><p>Greenland</p></li>
+        <li><p>Iceland</p></li>
+    </ul>
+    </section>
+
+    <p>I have heard good things about the Caribbean.</p>
+
+    <figure>
+        <img src="images/caribbean.png" alt="Caribbean Beach" width="1000" height="800" title="Caribbean Beach" loading="lazy">
+        <figcaption> <em>Beautiful Caribbean Beach </em></figcaption>
+    </figure>
+    <strong>I have heard good things about going here</strong>:
+        <address>
+            Margaritaville Beach Resort Grand Cayman<br>
+            280 West Bay Road<br>
+            Grand Cayman, KY1-1209 <br>
+            <figure>
+                <figcaption>an image of Margaritaville Beach Resort in The Grand Caymans</figcaption>
+                <img src="https://images.trvl-media.com/lodging/17000000/16780000/16778400/16778396/45376b2b.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Margaritaville Beach Resort" width="400" height="300" title="Margaritaville Beach Resort in the Grand Caymans" loading="lazy"></figure>
+        </address>
+        <!-- To do: add more places-->
+
+    <h3>Places I would like to avoid</h3>
+  <dl>
+    <dt>Antarctica</dt>
+    <dd>Too <strong>cold and icy</strong>.</dd>
+    <dt>Deserts</dt>
+    <dd>Too <strong>hot and dry</strong>.</dd>
+  </dl>
+</main>
+
+<footer>
+    <hr>
+    <p>&lt;&lt;&lt;&copy; 2024 <a href="about.html">Bravo</a>&gt;&gt;&gt;</p>
+    <p><a href="#">Back to Home.</a></p>
+</footer>
+
+<hr>
+
+    <ul>
+        <li> Download an <a href="html5.png" download>HTML5 favicon</a>.</li>
+        <li> Contact me at <a href="mailto:nyamosie@gmail.com">My email</a></li>
+        <li>
+            Dial my phone number:
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </li>
+        <li>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                Visit Google.com
+            </a>
+        </li>
+    </ul>
+
+</body>
+</html>
