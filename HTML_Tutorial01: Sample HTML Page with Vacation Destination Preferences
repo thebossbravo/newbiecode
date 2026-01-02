@@ -22,6 +22,7 @@
             <li><a href="about.html" target="_blank">About</a></li>
             <li><a href="#html">Learning HTML</a></li>
             <li><a href="#Vacation">Vacation Plans</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
 </header>
@@ -55,8 +56,18 @@
 
 
 <main>
-    <section id="html">
-        <h3>My daily schedule for learning HTML. </h3>
+    <article id="html"> <h2> HTML Learning Section</h2>
+        <section>
+            <h3>Things I have learned about HTML so far. </h3>
+                <ul>
+                    <li>HTML stands for HyperText Markup Language</li>
+                    <li>HTML is used to create web pages</li>
+                    <li>HTML uses tags to structure content</li>
+                    <li>Common HTML tags include &lt;h1&gt; to &lt;h6&gt;, &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt;</li>
+                    <li>Attributes provide additional information about HTML elements</li>
+                    <li>HTML5 is the latest version of HTML</li>
+                </ul>
+            <h3>My daily schedule for learning HTML. </h3>
             <ol>
                 <li>Wake up early</li>
                 <li>Have breakfast</li>
@@ -65,7 +76,87 @@
                 <li>Work on projects</li>
                 <li>Relax and unwind</li>   
             </ol>
-    </section>
+            <aside>
+                <details>
+                    <summary>
+                        Guess the number of hours I code every day!</summary>
+                        <p>Hint: It is between 1 and 10 hours.</p>
+                        <p>Answer: I code for <time datetime="PT3H">5 </time>hours every day! I start at <time datetime="08:00">8:00 AM</time> and code till <time datetime="13:00">1:00 PM</time>.</p>
+            
+                </details>
+            </aside>
+            <br>
+            <table>
+                <caption>HTML Learning Resources</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Resource Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MDN Web Docs</td>
+                        <td>Website</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></td>
+                    </tr>
+                    <tr>
+                        <td>W3Schools</td>
+                        <td>Website</td>
+                        <td><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTML5 Tutorial</td>
+                        <td>Online Course</td>
+                        <td><a href="https://www.codecademy.com/learn/learn-html">https://www.codecademy.com/learn/learn-html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table>
+                <caption>My HTML Learning Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">Starting Time</th>
+                        <th scope="col">Ending Time</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"> Early Morning</th>
+                        <td><time datetime="08:00">8:00 AM</time></td>
+                        <td><time datetime="09:00">9:00 AM</time></td>
+                        <td>Study HTML Basics</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">Mid Morning</th>
+                        <td><time datetime="10:00">10:00 AM</time></td>
+                        <td><time datetime="11:00">11:00 AM</time></td>
+                        <td>Practice Coding</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Late Morning</th>
+                        <td><time datetime="11:00">11:00 AM</time></td>
+                        <td><time datetime="12:00">12:00 PM</time></td>
+                        <td>Build a Project</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Afternoon</th>
+                        <td><time datetime="12:00">12:00 PM</time></td>
+                        <td><time datetime="13:00">1:00 PM</time></td>
+                        <td>Review and Reflect</td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total Learning Time: 5 hours. That's what I do every day.</td>
+                    </tr>
+            </table>
+            </section>
+    </article>
     <p>This is a paragraph on the page.Let me tell you how
         <br>&nbsp;&nbsp;&nbsp;...I learned more about web development.
         <br>&nbsp;&nbsp;&nbsp;...I planned out my projects and schedule
@@ -73,48 +164,162 @@
     </p>
 
     <hr>
-    <section id="Vacation">
+    <article id="Vacation">
 
-    <h2>I Am Also Planning a Vacation. </h2>
-    <figure>
-        <img src="images/vacation.png" alt="Vacation Image" width="600" height="400" title="Vacation Image" loading="lazy">
-        <figcaption> <em>Beautiful vacation picture of two people relaxing </em></figcaption>
-    </figure>
+        <h2>I Am Also Planning a Vacation. </h2>
+        <figure>
+            <img src="images/vacation.png" alt="Vacation Image" width="600" height="400" title="Vacation Image" loading="lazy">
+            <figcaption> <em>Beautiful vacation picture of two people relaxing </em></figcaption>
+        </figure>
 
-    <p>I have been working extremely hard and really need a break.</p>
-    <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
-    <h3>Places I would like to visit. </h3>
-    <ul>
-        <li><p>Alaska</p></li>
-        <li><p>Greenland</p></li>
-        <li><p>Iceland</p></li>
-    </ul>
-    </section>
+        <p>I have been working extremely hard and really need a break.</p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
 
-    <p>I have heard good things about the Caribbean.</p>
+        <section>
+            <h3>Places I would like to visit. </h3>
+            <ul>
+                <li><p>Alaska</p></li>
+                <li><p>Greenland</p></li>
+                <li><p>Iceland</p></li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Top Vacation Destination</h3>
+        <p>I have heard good things about the Caribbean.</p>
 
-    <figure>
-        <img src="images/caribbean.png" alt="Caribbean Beach" width="1000" height="800" title="Caribbean Beach" loading="lazy">
-        <figcaption> <em>Beautiful Caribbean Beach </em></figcaption>
-    </figure>
-    <strong>I have heard good things about going here</strong>:
-        <address>
-            Margaritaville Beach Resort Grand Cayman<br>
-            280 West Bay Road<br>
-            Grand Cayman, KY1-1209 <br>
-            <figure>
-                <figcaption>an image of Margaritaville Beach Resort in The Grand Caymans</figcaption>
-                <img src="https://images.trvl-media.com/lodging/17000000/16780000/16778400/16778396/45376b2b.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Margaritaville Beach Resort" width="400" height="300" title="Margaritaville Beach Resort in the Grand Caymans" loading="lazy"></figure>
-        </address>
+        <figure>
+            <img src="images/caribbean.png" alt="Caribbean Beach" width="1000" height="800" title="Caribbean Beach" loading="lazy">
+            <figcaption> <em>Beautiful Caribbean Beach </em></figcaption>
+        </figure>
+        <strong>I have heard good things about going here</strong>:
+            <address>
+                Margaritaville Beach Resort Grand Cayman<br>
+                280 West Bay Road<br>
+                Grand Cayman, KY1-1209 <br>
+                <figure>
+                    <figcaption>an image of Margaritaville Beach Resort in The Grand Caymans</figcaption>
+                    <img src="https://images.trvl-media.com/lodging/17000000/16780000/16778400/16778396/45376b2b.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt="Margaritaville Beach Resort" width="400" height="300" title="Margaritaville Beach Resort in the Grand Caymans" loading="lazy"></figure>
+            </address>
+        </section>
+    </article>
         <!-- To do: add more places-->
 
-    <h3>Places I would like to avoid</h3>
-  <dl>
-    <dt>Antarctica</dt>
-    <dd>Too <strong>cold and icy</strong>.</dd>
-    <dt>Deserts</dt>
-    <dd>Too <strong>hot and dry</strong>.</dd>
-  </dl>
+        <section>
+            <h3>Places I would like to avoid</h3>
+        <dl>
+            <dt>Antarctica</dt>
+            <dd>Too <strong>cold and icy</strong>.</dd>
+            <dt>Deserts</dt>
+            <dd>Too <strong>hot and dry</strong>.</dd>
+        </dl>
+    </section>
+
+<hr>
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, please fill out the form below:</p>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" placeholder="Boss" required autocomplete="on" autofocus><br><br>
+
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" placeholder="Bravo" required autocomplete="on"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="phoneNumber">Phone Number:</label><br>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required autocomplete="on" placeholder="254701460386" pattern="[0-9]{10}"><br><br>
+
+                <!-- <label for ="coffeePreference">Coffee Preference:</label><br>
+                <select name="coffeePreference" id="coffeePreference" multiple size="11" required>
+
+                    <optgroup label="Regular Coffee Types">
+                        <option value="regularCoffee">Regular Coffee</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="icedCoffee">Iced Coffee</option>
+                    </optgroup>
+
+                    <optgroup label="Specialty Coffee Types">
+                        <option value="mocha">Mocha</option>
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="espresso">Espresso</option>
+                    </optgroup>
+                    <option value="Other" selected>Other</option >
+                </select><br><br> -->
+
+                <label for="coffee"> Favorite Coffee:</label>
+                <input type="text" id="coffee" name="coffee" list="coffeeList" size="10" placeholder="Select or type your favorite coffee" required>
+                <datalist id="coffeeList">
+                    <option value="Regular Coffee">
+                    <option value="Black">
+                    <option value="White">
+                    <option value="Iced Coffee">
+                    <option value="Mocha">
+                    <option value="Latte">
+                    <option value="Cappuccino">
+                    <option value="Espresso">
+                    <option value="Other">
+                </datalist> <br><br>
+
+           
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required placeholder="Type your message here..."></textarea><br><br>
+
+                <label for ="password">Password:</label><br>
+                <input type="password" id="password" name="password" required placeholder="Your secret password"><br><br>
+
+                
+            </p>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>What is your favorite food?</legend>
+                <p>
+                    <input type="radio" id="tacos" name="food" value="tacos">
+                    <label for="tacos"> Tacos</label><br><br>
+                </p>
+                <p>
+                    <input type="radio" id="pizza" name="food" value="pizza">
+                    <label for="pizza"> Pizza</label><br><br>
+                </p>
+                <p>
+                    <input type="radio" id="burger" name="food" value="burger">
+                    <label for="burger"> Burger</label><br><br>
+                </p>
+                <p>
+                    <input type="radio" id="other" name="food" value="other">
+                    <label for="other"> Other</label><br><br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Do you have pets?</legend>
+                <p>
+                    <input type="checkbox" id="dog" name="pet" value="dog">
+                    <label for="dog"> Dog</label><br><br>
+                </p>
+                <p>
+                    <input type="checkbox" id="cat" name="pet" value="cat">
+                    <label for="cat"> Cat</label><br><br>
+                </p>
+                <p>
+                    <input type="checkbox" id="parrot" name="pet" value="parrot">
+                    <label for="parrot"> Parrot</label><br><br>
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+        </form>
+    </article>
+
 </main>
 
 <footer>
