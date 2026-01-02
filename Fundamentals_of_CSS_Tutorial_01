@@ -1,1 +1,30 @@
+*{
+    font-family: monospace;
+}
+
+body {
+    font-size: 26;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.red-text {
+    color: rgb(95, 3, 3);
+}
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f10707;
+}
+
+
+
 
