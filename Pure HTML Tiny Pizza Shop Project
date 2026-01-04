@@ -6,126 +6,165 @@
     <meta name="author" content="Bravo">
     <meta name="description" content="The best pizza in town!">
     <title> The tiny Pizza Shop</title>
+
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
 </head>
 
 
 <body>
-<header>
+<header class="container">
     <h1> Welcome to The <em>tiny</em> Pizza Shop</h1>
-    <nav>
-        <ul>
-            <li><a href="pizza.html"> Home</a></li>
-            <li><a href="#aboutUs"> About Us</a></li>
-            <li><a href="#menu"> Our Menu</a></li>
-            <li><a href="contactUs.html" target="_blank"> Contact Us</a></li>
-        </ul>
+    <nav> 
+        <a href="pizza.html"> Home</a><br>
+        <a href="#aboutUs"> About Us</a><br>
+        <a href="#menu"> Our Menu</a><br>
+        <a href="contactUs.html" target="_blank"> Contact Us</a><br><br>
     </nav>
 </header>
-<figure>
-    <figcaption>An image of The Tiny Pizza Shop</figcaption>
-    <img src="images/pizza03.png" alt="The Tiny Pizza Shop" width="800" height="400" loading="lazy">
-</figure>
-<hr>
 
-<p> Welcome to The Tiny Pizza Shop, where we serve up the most delicious and authentic pizzas in town! Our cozy little shop is dedicated to bringing you the best flavors and a warm atmosphere. Whether you're craving a <em>classic Margherita</em> or something more adventurous, we've got you covered. Come on in and experience pizza perfection!</p> <br>
 
-<article id="storeHours">
-    <h2> Store Hours</h2>
 
-        <p> We are open 7 days a week!</p>
-        <dl>
-            <dt> Monday - Friday:</dt>
-            <dd> 11:00 AM - 10:00 PM</dd>
-            <dt> Saturday - Sunday:</dt>
-            <dd> 12:00 PM - 10:00 PM</dd>
-        </dl>
-</article>
 <main>
-    <article id="aboutUs">
-         <h2> About <abbr title="The Tiny Pizza Shop">TPS</abbr></h2>
-                <p> At The Tiny Pizza Shop, we pride ourselves on crafting the most delicious and authentic pizzas using fresh ingredients and traditional recipes. Whether you're a fan of <em>classic Margherita</em> or <em>adventurous toppings</em>, we have something for everyone!</p>
+    <figure>
+        <figcaption>An image of The Tiny Pizza Shop</figcaption>
+        <img src="images/pizza03.png" alt="The Tiny Pizza Shop" width="800" height="400" loading="lazy">
+    </figure>
+    <hr>
 
-                <h3> Our Specialties</h3>
-                    <ul>
-                        <li>Margherita Pizza</li>
-                        <li>Pepperoni Pizza</li>
-                        <li>BBQ Chicken Pizza</li>
-                        <li>Veggie Delight Pizza</li>
-                        <li>Customizable Pizzas</li>
-                    </ul>
-                <p> We also offer a variety of sides, salads, and desserts to complement your meal. Don't forget to check out our daily specials and combo deals!</p> <br><br>
+    <p> Welcome to The Tiny Pizza Shop, where we serve up the most delicious and authentic pizzas in town! Our cozy little shop is dedicated to bringing you the best flavors and a warm atmosphere. Whether you're craving a <em>classic Margherita</em> or something more adventurous, we've got you covered. Come on in and experience pizza perfection!</p> <br>
 
-                <aside><h3>Pizza Trivia</h3>
-                    <details>
-                        <summary>
-                            <p> Did you know that the world's largest pizza was made in Italy in 2012 and measured a whopping 1261.65 square meters? Now that's a lot of pizza!</p>
-                            </p>
+    <div class="circle"></div>
 
-                            <p> Pizza is one of the most popular foods worldwide, with over 5 billion pizzas sold annually in the United States alone.</p>
-                        
-                        </summary>
-                    </details>
-                </aside>
+    <article id="storeHours">
+        <h2> Store Hours</h2>
+
+            <p> We are open 7 days a week!</p>
+            <dl>
+                <dt> Monday - Friday:</dt>
+                <dd> <time>11:00 AM - 10:00 PM</time></dd>
+                <dt> Saturday - Sunday:</dt>
+                <dd> <time>12:00 PM - 10:00 PM</time></dd>
+            </dl>
     </article>
+        <hr>
+        <article id="aboutUs">
+            <h2> About <abbr title="The Tiny Pizza Shop">TPS</abbr></h2>
+                    <p> At The Tiny Pizza Shop, we pride ourselves on crafting the most delicious and authentic pizzas using fresh ingredients and traditional recipes. Whether you're a fan of <em>classic Margherita</em> or <em>adventurous toppings</em>, we have something for everyone!</p>
+
+                    <h3> Our Specialties</h3>
+                        <ul>
+                            <li>Margherita Pizza</li>
+                            <li>Pepperoni Pizza</li>
+                            <li>BBQ Chicken Pizza</li>
+                            <li>Veggie Delight Pizza</li>
+                            <li>Customizable Pizzas</li>
+                        </ul>
+                    <p> We also offer a variety of sides, salads, and desserts to complement your meal. Don't forget to check out our daily specials and combo deals!</p> <br><br>
+
+                    <aside>
+                        <h3>Pizza Trivia</h3>
+                        <details>
+                            <summary> Did you know?</summary>
+                                <p> Did you know that the world's largest pizza was made in Italy in <time datetime="2012">2012</time>and measured a whopping 1261.65 square meters? Now that's a lot of pizza! (Source: <cite><a href="https://edition.cnn.com/travel/article/world-biggest-pizza-guinness-record">CNN Travel</a></cite>)
+                                </p>
+
+                                <p> Pizza is one of the most popular foods worldwide, with over 5 billion pizzas sold annually in the United States alone. (Source: <cite><a href="https://pizzaovensaus.com.au/pizza-statistics/">Pizza Ovens Australia</a></cite>)
+                                </p>
+                            
+                            
+                        </details>
+                    </aside>
+        </article>
 
 
-    <hr>
-    <article id="menu">
-        <h2> Our Menu</h2>
-        <p> Explore our delicious menu filled with a variety of pizzas, sides, and desserts. Whether you're in the mood for a classic Margherita or something more adventurous, we've got you covered!</p>
-        <figure>
-            <figcaption> The tiny Pizza Shop pizza menu</figcaption>
-            <table border="1" solid>
-                <thead>
-                    <tr>
-                        <th> Pizza Type</th>
-                        <th> Size</th>
-                        <th> Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Margherita</td>
-                        <td> Small</td>
-                        <td> $8.99</td>
-                    </tr>
-                    <tr>
-                        <td> Pepperoni</td>
-                        <td> Medium</td>
-                        <td> $12.99</td>
-                    </tr>
-                    <tr>
-                        <td> BBQ Chicken</td>
-                        <td> Large</td>
-                        <td> $15.99</td>
-                    </tr>
-                    <tr>
-                        <td> Veggie Delight</td>
-                        <td> Medium</td>
-                        <td> $13.99</td>
-                    </tr>
-                </tbody>
-            </table>
-        </figure>
-    </article>
+        <hr>
+        <article id="menu">
+            <h2> Our Menu</h2>
+            <p> Explore our delicious menu filled with a variety of pizzas, sides, and desserts. Whether you're in the mood for a classic Margherita or something more adventurous, we've got you covered!</p>
+            <figure>
+                <figcaption> The tiny Pizza Shop pizza menu</figcaption>
+                <table border="1" solid>
+                    <thead>
+                        <tr>
+                            <th scope="col"> Pizza Type</th>
+                            <th scope="col"> Size</th>
+                            <th scope="col"> Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"> Margherita</th>
+                            <td> Small</td>
+                            <td> $8.99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> Pepperoni</th>
+                            <td> Medium</td>
+                            <td> $12.99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> BBQ Chicken</th>
+                            <td> Large</td>
+                            <td> $15.99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> Veggie Delight</th>
+                            <td> Medium</td>
+                            <td> $13.99</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><strong> Gluten-Free Crust Option Available</strong></td>
+                            <td> Add $2.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </figure>
+        </article>
 
-    <hr>
+        <hr>
 
-    <a href="pizza.html"> Back to the top!</a>
+        <a href="pizza.html"> Back to the top!</a>
 
-    <hr>
+        <hr>
 
-    <h2> Visit Us</h2>
-    <p> 
-        Come visit us at our cozy location and enjoy a slice of heaven! We look forward to serving you the best pizza in town.
-        Our address is <address>123 Pizza Lane,
-             Flavor Town.
-             Food City</address>
-            <br>
-             See you soon!
-    </p>
+        <article id="reviews">
+            
+            <h2 class="red-text"> Customer Reviews</h2>
+
+            <h3> Upload a picture of your pizza experience!</h3>
+            <input type="file" id="upload" name="upload" accept="image/*,.pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
+
+
+
+            <section>
+                <h3 class="red-text"> John D.</h3>
+                <p> "The Tiny Pizza Shop has the best pizza I've ever tasted! The crust is perfectly crispy, and the toppings are always fresh. Highly recommend the BBQ Chicken pizza!"</p>
+            </section>
+            <section>
+                <h3 class="red-text"> Sarah K.</h3>
+                <p> "I love the cozy atmosphere of The Tiny Pizza Shop. The staff is friendly, and the Margherita pizza is simply divine. Can't wait to come back!"</p>
+            </section>
+            <section>
+                <h3 class="red-text"> Mike L.</h3>
+                <p> "If you're looking for authentic pizza, this is the place to go. The Veggie Delight pizza is loaded with fresh veggies and bursting with flavor. A must-try!"</p>
+            </section>
+        </article>
+
+        <hr>
+
+        <h2> Visit Us</h2>
+        <p> 
+            Come visit us at our cozy location and enjoy a slice of heaven! We look forward to serving you the best pizza in town.
+            Our address is <address>123 Pizza Lane,
+                Flavor Town.
+                Food City</address>
+                <br>
+                See you soon!
+        </p>
 </main>
 </body>
 
