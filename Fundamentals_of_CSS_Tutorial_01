@@ -120,4 +120,39 @@ p {
     width: 100%; height: 100%; border-radius: 50%;
 }
 
+ 
+/* a {
+    color: hsl(240, 100%, 50%,);
+    text-decoration: none;
+    cursor: pointer; */
+/* } */
+a:visited {
+    color: rgb(48, 2, 134);
+}
 
+a:hover, a:focus{
+    color: hsl(240, 100%, 50%, 0.75);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: hsl(240, 100%, 50%,);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style-position: inside;
+    line-height: 1.6;
+    list-style-type: square;
+}
+
+ul li:nth-child(even)::marker { 
+    color: #f10707;
+    font-size: 1.2rem;
+    content: "20% off! ";
+}
