@@ -1,3 +1,4 @@
+
 <!-- Basic html code for this mini project exercise -->
 
 <!DOCTYPE html>
@@ -22,11 +23,17 @@
             <li><a href="two.html">About</a></li>
         </ul>
     </nav>
-
+<main>
     <p>Learn more about <a href="https://edition.cnn.com/travel/article/world-best-food-dishes">Amazing Foods </a></p>
-  
-</body>
+  <br><br>
+    <p>This is a paragraph</p><br>
+    <p>This is <span class="opposite"> another </span>paragraph</p>
+    <br><br>
 
+
+    
+</body>
+</main>
 <hr>
 
 <footer>
@@ -42,9 +49,8 @@
 
 
 
+
 CSS for Styling the above HTML Page.
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -103,6 +109,25 @@ li a:focus{
 
 li:nth-child(5) a{
     border-radius: 0 0 2rem 2rem;
+}
+
+
+main{
+    background-color: aqua;
+    width: 50%;
+}
+p{
+    background-color: lightgray;
+   
+}
+
+.opposite{
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 4rem;
+    margin: 100px;
+    height: 200px;
 }
 
 
