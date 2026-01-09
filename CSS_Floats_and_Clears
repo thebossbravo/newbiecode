@@ -1,0 +1,35 @@
+<!-- Html code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Floats</title>
+    <link rel="stylesheet" href="floats.css">
+</head>
+<body>
+    <div class="block">Float</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores odit amet, mollitia beatae eaque aliquid minus ipsam obcaecati velit!</p>
+    <p>Nemo, aut accusamus nisi aliquam veniam culpa optio voluptate quis laboriosam labore sint ipsum, incidunt perspiciatis repudiandae quaerat. Unde, deserunt?</p>
+    <p>Aspernatur doloribus modi unde eius, officiis rem dolore similique iure necessitatibus! Earum vel similique sit ab laborum laboriosam totam reprehenderit.</p>
+    <p>Consectetur ab cum, ipsum commodi corrupti perferendis molestiae, minus ipsam quos quibusdam similique eligendi laborum minima reiciendis! Accusantium, aliquid perspiciatis!</p>
+    <p>Quia soluta laudantium ex dolor obcaecati, officiis minima aliquid? Ea, amet quas! Voluptatibus saepe, consequuntur in aperiam veritatis incidunt voluptate?</p>
+    
+</body>
+</html>
+
+
+
+CSS
+
+
+
+
+
+
+
+
+
+
