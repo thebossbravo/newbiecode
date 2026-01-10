@@ -35,7 +35,7 @@
 
     <p> Welcome to The Tiny Pizza Shop, where we serve up the most delicious and authentic pizzas in town! Our cozy little shop is dedicated to bringing you the best flavors and a warm atmosphere. Whether you're craving a <em>classic Margherita</em> or something more adventurous, we've got you covered. Come on in and experience pizza perfection!</p> <br>
 
-    <div class="circle"></div>
+   
 
     <article id="storeHours">
         <h2> Store Hours</h2>
@@ -49,6 +49,9 @@
             </dl>
     </article>
         <hr>
+
+        
+
         <article id="aboutUs">
             <h2> About <abbr title="The Tiny Pizza Shop">TPS</abbr></h2>
                     <p> At The Tiny Pizza Shop, we pride ourselves on crafting the most delicious and authentic pizzas using fresh ingredients and traditional recipes. Whether you're a fan of <em>classic Margherita</em> or <em>adventurous toppings</em>, we have something for everyone!</p>
@@ -127,7 +130,7 @@
 
         <hr>
 
-        <a href="pizza.html"> Back to the top!</a>
+        
 
         <hr>
 
@@ -138,20 +141,31 @@
             <h3> Upload a picture of your pizza experience!</h3>
             <input type="file" id="upload" name="upload" accept="image/*,.pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
 
+            <br><br>
+            <section class="columns">
 
-
-            <section>
-                <h3 class="red-text"> John D.</h3>
-                <p> "The Tiny Pizza Shop has the best pizza I've ever tasted! The crust is perfectly crispy, and the toppings are always fresh. Highly recommend the BBQ Chicken pizza!"</p>
-            </section>
-            <section>
-                <h3 class="red-text"> Sarah K.</h3>
-                <p> "I love the cozy atmosphere of The Tiny Pizza Shop. The staff is friendly, and the Margherita pizza is simply divine. Can't wait to come back!"</p>
-            </section>
-            <section>
-                <h3 class="red-text"> Mike L.</h3>
-                <p> "If you're looking for authentic pizza, this is the place to go. The Veggie Delight pizza is loaded with fresh veggies and bursting with flavor. A must-try!"</p>
-            </section>
+                <section class="review1">
+                    <div class="bravo">
+                        <img src="images/bravo.png" alt="an image of a happy customer" width="100" height="100" loading="lazy">
+                    </div>
+                    <h3 class="red-text"> Bravo D.</h3>
+                    <p> "The Tiny Pizza Shop has the best pizza I've ever tasted! The crust is perfectly crispy, and the toppings are always fresh. Highly recommend the BBQ Chicken pizza!"</p>
+                </section>
+                <section class="review2">
+                    <div class="lady">
+                        <img src="images/lady.png" alt="an image of a happy customer" width="100" height="100" loading="lazy">
+                    </div>
+                    <h3 class="red-text"> Lady K.</h3>
+                    <p> "I love the cozy atmosphere of The Tiny Pizza Shop. The staff is friendly, and the Margherita pizza is simply divine. Can't wait to come back!"</p>
+                </section>
+                <section class="review3">
+                    <div class="prof">
+                        <img src="images/prof.png" alt="an image of a happy customer" width="100" height="100" loading="lazy">
+                    </div>
+                    <h3 class="red-text"> Prof L.</h3>
+                    <p> "If you're looking for authentic pizza, this is the place to go. The Veggie Delight pizza is loaded with fresh veggies and bursting with flavor. A must-try!"</p>
+                </section>
+            </section> 
         </article>
 
         <hr>
@@ -165,11 +179,195 @@
                 <br>
                 See you soon!
         </p>
+
+
+        <form class="form1">
+            <fieldset>
+                <legend> Subscribe to our Newsletter</legend>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Subscribe">
+            </fieldset>
+        </form>
+        <br>
 </main>
+
+<a href="pizza.html"> Back to the top!</a>
+
 </body>
 
 <hr>
-
+<br><br>
 <footer>
     <p> &lt;&lt;&lt;&copy; 2024 The Tiny Pizza Shop. All rights reserved.&gt;&gt;&gt;</p>
 </html>
+
+
+
+
+CSS STlind Code
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    border: double rgb(19, 1, 1) 3px;
+    background-color: #560303;
+    color: rgb(5, 0, 0);
+    text-align: center;
+    border: rgb(95, 45, 45) 2px solid;
+    font-size: 1.5rem;
+    margin: 1.5em;
+    padding: 1.5em;
+    outline: rgb(245, 243, 243) 2px solid;
+    outline-offset: -15px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin: 0;
+    padding: 0;
+    background-color: #f4a5a5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(3, 94, 94);
+    width: 70%;
+    margin-left: 5rem;
+    margin-right: auto;
+
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.red-text {
+    color: rgb(95, 3, 3);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f10707;
+}
+
+p {
+
+    color: rgba(0, 0, 0, 50);
+
+}
+
+
+
+
+.columns{
+    column-count: 3;
+    column-rule: 2;
+    column-width: 250px;
+    column-gap: 2rem;
+    
+}
+
+
+.review1 {
+   
+    background-color: #f7caca;
+    padding: 5%;
+    margin: 0.1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    letter-spacing: 0.075em;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.review2 {
+   
+    background-color: #f7caca;
+    padding: 5%;
+    margin: 0.1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    letter-spacing: 0.075em;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+.review3 {
+    background-color: #f7caca;
+    padding: 5%;
+    margin:0.1rem 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    letter-spacing: 0.075em;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+.form1 {
+    background-color: #f7caca;
+    padding: 5%;
+    margin: 0.2rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-family: monospace;
+    
+}
+
+.bravo {
+    width: 100%; height: 100%; border-radius: 50%;
+}
+
+.lady {
+    width: 100%; height: 100%; border-radius: 50%;
+}
+
+.prof {
+    width: 100%; height: 100%; border-radius: 50%;
+}
+
+ 
+/* a {
+    color: hsl(240, 100%, 50%,);
+    text-decoration: none;
+    cursor: pointer; */
+/* } */
+a:visited {
+    color: rgb(48, 2, 134);
+}
+
+a:hover, a:focus{
+    color: hsl(240, 100%, 50%, 0.75);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: hsl(240, 100%, 50%,);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style-position: inside;
+    line-height: 1.6;
+    list-style-type: square;
+}
+
+ul li:nth-child(even)::marker { 
+    color: #f10707;
+    font-size: 1.2rem;
+    content: "20% off! ";
+}
