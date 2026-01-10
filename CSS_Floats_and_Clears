@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="floats.css">
 </head>
 <body>
-    <div class="block">Float</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores odit amet, mollitia beatae eaque aliquid minus ipsam obcaecati velit!</p>
+    <section>
+        <div class="block left">Float</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolores odit amet, mollitia beatae eaque aliquid minus ipsam obcaecati velit!</p>
+    </section>
+    <div class="clear"></div>
     <p>Nemo, aut accusamus nisi aliquam veniam culpa optio voluptate quis laboriosam labore sint ipsum, incidunt perspiciatis repudiandae quaerat. Unde, deserunt?</p>
+    <div class="block right">right float</div>
     <p>Aspernatur doloribus modi unde eius, officiis rem dolore similique iure necessitatibus! Earum vel similique sit ab laborum laboriosam totam reprehenderit.</p>
     <p>Consectetur ab cum, ipsum commodi corrupti perferendis molestiae, minus ipsam quos quibusdam similique eligendi laborum minima reiciendis! Accusantium, aliquid perspiciatis!</p>
     <p>Quia soluta laudantium ex dolor obcaecati, officiis minima aliquid? Ea, amet quas! Voluptatibus saepe, consequuntur in aperiam veritatis incidunt voluptate?</p>
@@ -21,8 +25,41 @@
 </html>
 
 
-
 CSS
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.block{
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+}
+
+.left{
+    float: left;
+    margin-right: 1rem;
+}
+.right{
+    float: right;
+    margin-left: 1rem;
+}
+
+.clear{
+    clear: both;
+}
+
+section{
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    display: flow-root;
+}
 
 
 
