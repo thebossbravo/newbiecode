@@ -1,1 +1,73 @@
+HTML Code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Columns</title>
+    <link rel="stylesheet" href="columns.css">
+</head>
+<body>
+    <section class="columns">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita sint aperiam eius odio corporis iste numquam eveniet in, vero distinctio.</p>
 
+        
+        <h2>Next Topic </h2>
+
+        <p class="quote"> &#8220;Where's my rug, man? &#8221;<span class="nowrap">&#8212; The Dude<span></p>
+
+        <p>Vel sunt nihil corrupti rerum magnam minima perferendis veniam quod repudiandae! Deleniti fuga reiciendis id nulla soluta, aliquam repudiandae possimus!</p>
+
+
+        <p>Corporis blanditiis, autem veritatis nesciunt possimus, libero officiis voluptates quidem perferendis repellendus consequatur sapiente dolorem molestias, ratione repudiandae voluptatibus vel.</p>
+        <p>Mollitia, quae expedita provident odio a illo debitis dolor saepe sint incidunt asperiores, ipsam maxime, id iusto molestias iste unde.</p>
+    </section>
+
+    <p>Facilis, veniam saepe. Neque ex atque recusandae dignissimos praesentium incidunt? Impedit porro, aperiam cupiditate dolores excepturi voluptas sit voluptatibus perspiciatis?</p>
+    
+</body>
+</html>
+
+
+
+
+CSS styling code
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns{
+    columns: 4 250px;
+    column-rule: 3px solid black;
+    column-gap: 3rem;
+}
+
+.columns p{
+    margin: 0;
+}
+
+.columns h2{
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;
+}
+
+.quote{
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+    margin-top: 2rem;
+
+}
+
+.nowrap{
+    white-space: nowrap;
+}
