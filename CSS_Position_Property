@@ -1,0 +1,84 @@
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>miniProject</title>
+    <link rel="stylesheet" href="miniProject.css">
+</head>
+<body>
+    <button class="social">social</button>
+    <section id="one">
+        <header class="blue">Header One</header>
+            <h2>One</h2>
+        
+    </section>
+    <section id="two">
+        <header class="red">Header Two</header>
+        <h2>Two</h2>
+    </section>
+    <section id="three">
+        <header class="green"> Header Three</header>
+        <h2>Header Three</h2>
+    </section>
+    <br>
+    <footer>
+        <a href="#one">One</a>
+        <a href="#two">Two</a>
+        <a href="#three">Three</a>
+    </footer>
+    
+</body>
+</html>
+
+
+CSS STYLING
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh; 
+}
+
+.blue { background-color: blue;}
+.red { background-color: red;}
+.green { background-color: green;}
+
+header, footer {
+    color: white;
+    text-align: center;
+    }
+    
+header{
+    position: sticky;
+    top: 0;
+    font-size: 3rem;
+    height: 100px;
+}
+footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+}
+
+a:visited{
+    color: white;
+}
+
+.social{
+    background-color: royalblue;
+    color: white;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}
+
