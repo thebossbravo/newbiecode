@@ -1,0 +1,108 @@
+HTML CODE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="header el">Header</header>
+
+
+<body>
+    <main class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </main>
+<aside class="sidebar el"><h2>Sidebar</h2></aside>
+<footer class="footer el"><h2>Footer</h2></footer>
+    
+</body>
+</html>
+
+
+
+CSS STYLING
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 60px auto 60px;
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn sb sb"
+        "ft ft ft ft ft ft ft ft ft";
+        gap: 0.5rem;
+}
+
+.el{
+    background-color: rebeccapurple;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.sidebar{
+    grid-area: sb;
+    background-color: blue;
+}
+
+.footer{
+    grid-area: ft;
+    background-color: green;
+}
+
+.container{
+    grid-area: mn;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+}
+
+.box:first-child {
+    background-color: blue;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+
+    display: grid;
+    place-content: center;
+}
+
+.box:nth-child(2){
+    background-color: purple;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+
+.box{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
