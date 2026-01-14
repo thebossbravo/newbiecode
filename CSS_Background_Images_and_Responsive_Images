@@ -1,1 +1,143 @@
+HTML CODE
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS IMAGES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <section class="hero">
+            <figure class="profile-pic-figure">
+                <img src="images/profile-800x800.png" alt="Profile picture" title="My profile picture" width="800" height="800">
+                <figcaption class="offscreen">Alisa Doe</figcaption>
+
+            </figure>
+            <h1 class="h1">
+                <span class="nowrap">Hello</span>
+                <span class="nowrap">I am Alisa</span>
+
+            </h1>
+
+        </section>
+    </div> -->
+    <!-- <section class="example">
+        <p>
+            <img src="images/pat1.png" alt="Pattern 1" width="200" height="200"> This is a sample paragraph.
+        </p>
+ -->
+    <!-- </section> -->
+     <section>
+        <p class="clip">Alisa</p>
+     </section>
+    
+</body>
+</html>
+
+
+
+CSS STYLING 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Begin reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* End reset */
+
+/* Utility Classes */
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* End Utility Classes */
+
+body{
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+
+    background-color: midnightblue;
+    background-image: url('./images/bubbles.png'), 
+                      linear-gradient(midnightblue, steelblue, lightgrey, white);
+    background-repeat: repeat, no-repeat;
+    background-position: bottom;
+    background-size: 20%, auto;
+}
+
+
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgb(251, 210, 156);
+    background-image: url('./images/map-2176x1451.png');
+    background-size: cover;
+}
+
+.h1 {
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    background-repeat: repeat;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    padding: 0.25rem;
+    border-radius: 10px;
+}
+
+.profile-pic-figure{
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double white;
+    border-radius: 50%;
+}
+
+
+.example{
+    margin-top: 1rem;
+    padding-left: 10vh;
+    border: 1px solid red;
+}
+
+.example img{
+    width: 25%;
+    height: auto;
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url(./images/scenic-2200x1331.png);
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsla(0, 0%, 0%, 0.205);
+
+}
