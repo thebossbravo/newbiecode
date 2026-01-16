@@ -1,0 +1,195 @@
+HTML CODE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA ">
+    <title>CSS Mini-Project: Profile Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Staff</h1>
+        <nav>
+            <a href="#profile1">Boss</a>
+            <a href="#profile2">Bravo</a>
+            <a href="#profile3">Nisha</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="profile1" class="card">
+            <figure>
+                <img src="images/professional portrait1.png" alt="Boss" width="500" height="500">
+                <figcaption>Boss</figcaption>
+            </figure>
+            <p><q>I run stuff.</q></p>
+        </article>
+
+        <article id="profile2" class="card">
+            <figure>
+                <img src="images/Screenshot 2025-04-10 094304.png" alt="Bravo" width="500" height="500">
+                <figcaption>Bravo Dev</figcaption>
+            </figure>
+            <p><q>I develop systems and stuff.</q></p>
+        </article>
+
+        <article id="profile3" class="card">
+            <figure>
+                <img src="images/lady.jpg" alt="Nisha" width="500" height="500">
+                <figcaption>Nisha Dev Rel</figcaption>
+            </figure>
+            <p><q>I manage people and stuff.</q></p>
+        </article>
+        
+    </main>
+    
+</body>
+<footer>
+    <p>&copy;Bravo</p>
+</footer>
+</html>
+
+
+CSS STYLING CODE
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/* GENERAL STYLES */
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #1e293b;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a, nav a:visited {
+    color: black;
+}
+
+
+nav a:hover, nav a:focus {
+    color: hwb(0 0% 100% / 0.306);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+
+}
+
+
+
+
+
+
+
+
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    nav {
+        display: none;
+    }
+    
+
+    /* MEDIUM */
+}
+@media screen and (min-width: 768px) {
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+    
+}
+
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+        
+}
+
+/* EXTRA-LARGE */
+@media screen and (min-width: 1225px) {
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+}
