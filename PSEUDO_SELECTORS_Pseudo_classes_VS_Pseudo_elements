@@ -1,0 +1,292 @@
+HTML CODE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-euiv="X-UA ">
+    <title>CSS Mini-Project: Profile Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Staff</h1>
+        <nav>
+            <a href="#profile1">Boss</a>
+            <a href="#profile2">Bravo</a>
+            <a href="#profile3">Nisha</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="profile1" class="card">
+            <figure>
+                <img src="images/professional portrait1.png" alt="Boss" width="500" height="500">
+                <figcaption>Boss</figcaption>
+            </figure>
+            <p><i>I run stuff.</i></p>
+        </article>
+
+        <article id="profile2" class="card">
+            <figure>
+                <img src="images/Screenshot 2025-04-10 094304.png" alt="Bravo" width="500" height="500">
+                <figcaption>Bravo Dev</figcaption>
+            </figure>
+            <p><i> I develop systems and stuff.</i></p>
+        </article>
+
+        <article id="profile3" class="card">
+            <figure>
+                <img src="images/lady.jpg" alt="Nisha" width="500" height="500">
+                <figcaption>Nisha Dev Rel</figcaption>
+            </figure>
+            <p><i>I manage people and stuff.</></p>
+        </article>
+        
+    </main>
+    
+</body>
+<footer>
+    <p>&copy;Bravo</p>
+</footer>
+</html>
+
+
+CSS CODE
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #1e293b;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+nav a:any-link {
+    color: black;
+}
+
+
+
+nav : is (a:hover, a:focus) {
+    color: hwb(0 0% 100% / 0.306);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/*PROFILE CARDS */
+
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card:target {
+    border: 5px solid hwb(248 3% 28% / 0.306);
+ }
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img {
+    border: 5px;
+    border-radius: 50%;
+}
+
+.card:nth-child(odd){
+    background-color: papayawhip;
+}
+
+.card figcaption {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.card figcaption::after {
+    content: "✧˖°.✧";
+    display: block;
+}
+
+.card p {
+    position: relative;
+}
+ 
+.card p::before {
+    content: open-quote;    
+    font-size: 2em;
+    position: absolute;
+    top: -0.25em;
+    left: -0.4em;
+}   
+
+.card p {
+    position: relative;
+}
+.card p::after {
+    content: close-quote;    
+    font-size: 2em;
+    position: absolute;
+    top: -0.25em;
+    right: -0.4em;
+}   
+
+footer {
+    bottom: 0;
+}
+
+
+
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+    main {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+
+    .card {
+        width: min (100%, 400px);
+    }
+    .card:last-child {
+        order: -1;
+    }
+
+
+    /* MEDIUM */
+}
+@media screen and (min-width: 768px) {
+   nav {
+    display: none;
+    }
+
+    .card {
+        width: min (100%, 325px);
+    }
+
+    .card figure { flex-flow: column-reverse;
+    }
+    
+    .card figcaption {
+        margin: 0.1rem 0;
+    }
+
+    .card p {
+        margin-top: 1rem;
+    }
+}
+
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+    .card {
+        width: min(100%, 400px);
+    }
+    .card:nth-child(2) {
+        order: -1;
+    }
+}
+
+/* EXTRA-LARGE */
+@media screen and (min-width: 1225px) {
+   .card {
+    width: min(calc(33% - 1rem), 500px);
+   }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .card {
+        width: min(calc(33% - 0.25re), 200px);
+    }
+
+    .card figcaption, .card p {
+        font-size: 1.25rem;
+    }
+}
