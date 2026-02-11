@@ -1,0 +1,358 @@
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+        <nav>
+            <h2>Navigation</h2>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>My Heading</h2>
+            <p class="content">This is a paragraph within the section.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolorem enim architecto repellendus minus voluptatum ratione ea omnis similique eum? Sed excepturi delectus sequi perspiciatis dolor, laboriosam atque quis distinctio.
+            </p>
+            <br>
+            <a href open="https://www.google.com/">Google</a>
+        </section>
+        <aside>
+            <h2>Aside</h2>
+            <p class="content"> <span class="tooltip" data-tooltip="This is Latin">Lorem</span>ipsum dolor sit amet consectetur adipisicing elit. Modi quo aperiam porro, odio mollitia suscipit eius similique corrupti! Facere nihil cum recusandae officia autem tenetur sus</p>
+    </main>
+</body>
+</html> 
+
+CSS STYLING CODE
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+ /*FONT*/
+    --FONT: "Nunito", sans-serif;
+    --FS: clamp(1.75rem, 3vh, 2.25rem);
+    --FS-SM: clamp(1.25rem, 2vh, 1.5rem);
+    --FS-XL: 3rem;
+
+    /*COLOR*/
+    --BGCOLOR: #1e293b;
+    --ALT-BGCOLOR: #475569;
+    --RADIAL-COLOR: whitesmoke;
+    --LIGHT-COLOR: whitesmoke;
+    --DARK-COLOR: black;
+
+
+    /*SQUARE*/
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max (150px, 20vw);
+    --SQUARE-BORDERS: 1px solid var(--DARK-COLOR);
+
+
+
+    /*GENERAL*/
+    --PADDING: 0.5em;
+    --SHADOWS: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --BORDERS: 1px solid var(--DARK-COLOR);
+
+    /*DARK MODE*/
+    @media (prefers-color-scheme: light) {
+        --BGCOLOR: black;
+        --ALT-BGCOLOR: #333;
+        --RADIAL-COLOR: rgb(217, 217, 217);
+        --SQUARE-COLOR: rgb(202, 174, 202);
+    }
+    --DARK-BGCOLOR: #1e293b;
+}
+
+
+/*FEATURES*/
+
+.square--highlight {
+    --SQUARE-BGCOLOR: cornflowerblue;
+}
+
+.square {
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+}
+
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: var(--FS) var(--FONT);
+    min-height: 100vh;
+
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
+
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    position: sticky;
+    background-color: var(--ALT-BGCOLOR);
+    color: var(--LIGHT-COLOR);
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.397);
+    border-bottom: var(--BORDERS)  var(--DARK-COLOR);
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 16px 6px 0 var(--DARK-COLOR);
+}
+
+
+nav a, nav a:visited {
+    color: var(--DARK-COLOR);
+}
+
+
+
+nav a:hover, nav a:focus {
+    color: hwb(0 0% 100% / 0.306);
+}
+
+main {
+
+    flex-grow: 1;
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: min(4vw, 15px); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+main section {
+    flex-grow: 1;
+    padding: var(--PADDING);
+}
+
+main aside {
+    background-color: hsla(0, 0%, 20%, 0.8);
+    color: var(--LIGHT-COLOR);
+    border: var(--BORDERS); 
+    font-size: var(--FS-SM);
+    font-style: italic;
+    border-radius: 15px;
+    padding: var(--PADDING);
+    
+}
+
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: var(--RADIAL-COLOR);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img {
+    border: var(--BORDERS);
+    border-radius: 50%;
+}
+
+.card figcaption {
+    font-weight: bolder;
+    font-size: var;
+    margin: 1rem;
+    text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    background-color: var(--ALT-BGCOLOR);
+    color: var(--LIGHT-COLOR);
+    padding: 0.25rem;
+    border-radius: 5px;
+    font-size: var(--FS-SM);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover::before {
+    content: attr(data-tooltip);
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    top: -20px;
+    white-space: nowrap;
+    background-color: var(--DARK-COLOR);
+    padding: var(--PADDING);
+    border-radius: 15px;
+}
+
+footer {
+    bottom: 0;
+}
+
+a:any-link {
+    color: firebrick;
+}
+
+a:hover, a:focus {
+    opacity: 0.6;
+    filter: brightness(150%);
+}
+
+
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+    main {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+
+    .card {
+        width: min (100%, 400px);
+    }
+    .card:last-child {
+        order: -1;
+    }
+
+
+    /* MEDIUM */
+}
+@media screen and (min-width: 768px) {
+   nav {
+    display: none;
+    }
+
+    .card {
+        width: min (100%, 325px);
+    }
+
+    .card figure { flex-flow: column-reverse;
+    }
+    
+    .card figcaption {
+        margin: 0.1rem 0;
+    }
+
+    .card p {
+        margin-top: 1rem;
+    }
+}
+
+
+/* LARGE */
+@media screen and (min-width: 992px) {
+    .card {
+        width: min(100%, 400px);
+    }
+    .card:nth-child(2) {
+        order: -1;
+    }
+}
+
+/* EXTRA-LARGE */
+@media screen and (min-width: 1225px) {
+   .card {
+    width: min(calc(33% - 1rem), 500px);
+   }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    h1 {
+        font-size: var(--FS);
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .card {
+        width: min(calc(33% - 0.25re), 200px);
+    }
+
+    .card figcaption, .card p {
+        font-size: var(--FS);
+    }
+}
+
+@media screen  and (min-width: 576px){
+    main {
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    main section {
+        width: calc(70% - 5px);
+    }
+
+    main aside {
+        width: calc(30% - 5px); 
+    }
+}
+
