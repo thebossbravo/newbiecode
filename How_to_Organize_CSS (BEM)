@@ -1,0 +1,307 @@
+HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">BEM</h1>
+        <nav class="header__nav">
+            <button class="header__btn">🚀</button>
+            <button class="header__btn header__btn--secondary">🔥</button>
+            <button class="header__btn header__btn--lean header__btn--border-lg">🍕</button>
+        </nav>
+    </header>
+    
+</body>
+</html>s
+
+
+
+CSS CODE
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+ /*FONT*/
+    --FONT: "Nunito", sans-serif;
+    --FS: clamp(1.75rem, 3vh, 2.25rem);
+    --FS-SM: clamp(1.25rem, 2vh, 1.5rem);
+    --FS-XL: 3rem;
+
+    /*COLOR*/
+    --BGCOLOR: #1e293b;
+    --ALT-BGCOLOR: #475569;
+    --RADIAL-COLOR: whitesmoke;
+    --LIGHT-COLOR: whitesmoke;
+    --DARK-COLOR: black;
+    --HEADER-BGCOLOR: hsla(298, 71%, 7%, 0.258);
+    --COLOR: WHITESMOKE;
+
+
+    /*SQUARE*/
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max (150px, 20vw);
+    --SQUARE-BORDERS: 1px solid var(--DARK-COLOR);
+
+
+
+    /*GENERAL*/
+    --PADDING: 0.5em;
+    --SHADOWS: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --BORDERS: 1px solid var(--DARK-COLOR);
+
+    /*DARK MODE*/
+    @media (prefers-color-scheme: light) {
+        --BGCOLOR: black;
+        --ALT-BGCOLOR: #333;
+        --RADIAL-COLOR: rgb(217, 217, 217);
+        --SQUARE-COLOR: rgb(202, 174, 202);
+    }
+    --DARK-BGCOLOR: #1e293b;
+}
+
+
+/*FEATURES*/
+
+.square--highlight {
+    --SQUARE-BGCOLOR: cornflowerblue;
+}
+
+.square {
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+}
+
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    align-items: center;
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+    font: var(--FS) var(--FONT);
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+header, footer {
+    position: sticky;
+    background-color: var(--ALT-BGCOLOR);
+    color: var(--LIGHT-COLOR);
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.397);
+    border-bottom: var(--BORDERS)  var(--DARK-COLOR);
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 16px 6px 0 var(--DARK-COLOR);
+}
+
+
+nav a, nav a:visited {
+    color: var(--DARK-COLOR);
+}
+
+
+
+nav a:hover, nav a:focus {
+    color: hwb(0 0% 100% / 0.306);
+}
+
+main {
+
+    flex-grow: 1;
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: min(4vw, 15px); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+main section {
+    flex-grow: 1;
+    padding: var(--PADDING);
+}
+
+main aside {
+    background-color: hsla(0, 0%, 20%, 0.8);
+    color: var(--LIGHT-COLOR);
+    border: var(--BORDERS); 
+    font-size: var(--FS-SM);
+    font-style: italic;
+    border-radius: 15px;
+    padding: var(--PADDING);
+    
+}
+
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: var(--RADIAL-COLOR);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img {
+    border: var(--BORDERS);
+    border-radius: 50%;
+}
+
+.card figcaption {
+    font-size: var;
+    font-weight: bolder;
+    margin: 1rem;
+    text-align: center;
+}
+
+.tooltip {
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+    pointer-events: none;
+    padding: 0.25rem;
+    opacity: 0;
+    font-size: var(--FS-SM);
+    color: var(--LIGHT-COLOR);
+    border-radius: 5px;
+    background-color: var(--ALT-BGCOLOR);
+}
+
+.tooltip:hover::before {
+    background-color: var(--DARK-COLOR);
+    border-radius: 15px;
+    content: attr(data-tooltip);
+    opacity: 1;
+    padding: var(--PADDING);
+    pointer-events: auto;
+    position: absolute;
+    top: -20px;
+    white-space: nowrap;
+}
+
+footer {
+    bottom: 0;
+}
+
+a:any-link {
+    color: firebrick;
+}
+
+a:hover, a:focus {
+    opacity: 0.6;
+    filter: brightness(150%);
+}
+
+
+
+
+/*BLOCKs*/
+/*aka COMPONENTS*/
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.header {
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--COLOR);
+    padding: 1rem 1rem 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+
+.header__btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+/* MODIFIERS */
+/* Incremental style changes */
+
+/* Blocks with modifiers */
+.header__btn--secondary {
+    background-color: yellow;
+}
+
+.header__btn--lean {
+    transform: skewX(-10deg);
+}
+
+.header__btn--border-lg {
+    border: 5px solid whitesmoke;
+}
+
+
+MARDDOWN
+## Suggestions to Organize Your CSS
+-- Follow your team
+
+-- Use comments to create headers
+
+-- Sort properties alphabetically
+
+-- Larger projects follow a naming convention methodolgy. A very popular naming convention methodology id Block, Element, Modifier (BEM).
+
+-- 
+
