@@ -184,7 +184,32 @@ article:not(:has(span)) {
 }
 
 
+/* Example 4 */
+/* OR example 4, we can also use :has() to select elements that do not have or have a certain sibling! */
 
+article:has(input, .button) {
+    background-color: lightpink;
+}
+
+/* Example 5 */
+/* AND example 5, we can also use :has() to select elements that have multiple children/properties or elements! */ 
+
+article:has(p):has(.button){
+    background-color: lightseagreen;
+}
+
+
+/* Example 6 */
+/* More complex example - specific and looks back.
+ */ 
+
+ article:has(p):has(.button) p:has(+ .button){
+    margin-bottom: 4rem;
+}
+
+
+
+.
 
 
 
@@ -253,6 +278,13 @@ article:not(:has(span)) {
 /* Practical Example */
 /* Create fewer modifier classes */
 
+.nav__item:has(.nav__submenu)::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    content: "\f150"; /* This is the Unicode for the down arrow icon in Font Awesome 5 */
+    margin-left: 1rem;
+}
+
 
 
 
@@ -296,8 +328,36 @@ input[type="checkbox"] {
 /* Modal & agree to terms */
 
 
+.awesome:has(.awesome__terms:checked) {
+    display: none;
+}
+
+.three:has(.lightswitch:checked){
+    background-color: var(--COLOR);
+    color: var(--BGCOLOR);
+}
+
+.three:has(.bubbleswitch:checked) {
+    background: repeat-y right center url("../Background\ Images\ and\ Responsive\ Image\ Properties/bubbles.png"), no-repeat linear-gradient(to left, steelblue, white);
+    background-size: 20px, auto;
+}
+
+
+
 /* =========================== */
 
 /* input validation */
+label:has(~ .name:valid)::after {
+    content:✅;
+    color: green;
+    margin-left: 1rem;
+    font-size: 3rem;
+}
 
+label:has(~ .name:invalid)::after {
+    content:❌;
+    color: red;
+    margin-left: 1rem;
+    font-size: 3rem;
+}
 
