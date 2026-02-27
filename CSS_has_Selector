@@ -160,6 +160,30 @@ article p {
 /* Example 1 */
 /* Previously we could only select forwards... */
 
+/* article:has(+ article) {
+    background-color:coral;
+}   
+ */
+/* Example 2 */ 
+/* We can do more than just select the parent element! We can select siblings too! */ 
+ 
+article:has(span) .bold{
+    background-color: lightblue;
+}
+
+article:has(span) .italic{
+    text-decoration: underline;
+    background-color: lightcoral;
+}
+
+/* Example 3 */
+/* not has (aka "does not have") */ */
+
+article:not(:has(span)) {
+    background-color: lightgreen;
+}
+
+
 
 
 
@@ -275,4 +299,5 @@ input[type="checkbox"] {
 /* =========================== */
 
 /* input validation */
+
 
